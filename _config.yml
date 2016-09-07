@@ -10,7 +10,7 @@ title: Proyecto JLB
 email: arireznik@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Edición comentada de "El muerto", cuento de Jorge Luis Borges.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "https://proyectojlb.github.io" # the subpath of your site, e.g. /blog
 
 # Build settings
 markdown: kramdown
