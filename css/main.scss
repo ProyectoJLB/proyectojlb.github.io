@@ -6,17 +6,26 @@
 
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+$base-font-family: "mrs-eaves-xl-serif", "mrs-eaves", Times New Roman, Times, serif;
+$base-font-size:   18px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
+$serif-display-font-family: "mrs-eaves", "mrs-eaves-xl-serif", Times New Roman, Times, serif;
+$sans-display-font-family: "futura-pt", Helvetica Neue, Helvetica, sans-serif;
+
 $spacing-unit:     30px;
 
+$red:              #c7102a;
+$orange:           #fe5000;
+$blue:             #2b1378;
+$light-blue:       #039dbf;
+$purple:           #682c6b;
+
 $text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$background-color: #fafaf8;
+$main-color:       $light-blue;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -49,5 +58,5 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
+        "custom"
 ;

@@ -1,0 +1,110 @@
+* {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition:    all 0.2s ease;
+  -ms-transition:     all 0.2s ease;
+  -o-transition:      all 0.2s ease;
+}
+
+.site-title {
+	svg {
+		fill: $text-color;
+
+		&:hover {
+			fill: darken($main-color, 20%);
+		}
+	}
+}
+
+.caratula {
+	height: calc(100vh - 100px);
+	background-color: $main-color;
+	color: white;
+	text-align: center;
+
+	h1 {
+		font-size: 4em;
+		font-family: $serif-display-font-family;
+		margin-bottom: 0;
+		padding-top: 20vh;
+	}
+
+	h2 {
+		color: darken($main-color, 20%);
+
+		&:before, &:after {
+			content: "";
+			height: 3px;
+			width: 90px;
+			margin-left: 4px;
+			margin-right: 4px;
+			margin-bottom: 5px;
+			background-color: darken($main-color, 20%);
+			display: inline-block;
+			@media screen and (max-width: 425px) {
+				width: 20px;
+			}
+		}
+	}
+
+	.gaucho {
+		fill: darken($main-color, 20%);
+		max-height: 100px;
+		padding-top: 30px;
+	}
+
+}
+
+.el-muerto {
+
+	p:first-of-type:first-letter {
+		float: left;
+		color: $main-color;
+		font-size: 4em;
+		padding-right: 20px;
+		margin-bottom: 0;
+		margin-top: -20px;
+		margin-bottom: -30px;
+		font-family: $serif-display-font-family;
+
+	}
+
+	margin-top: 2em;
+
+	figure {
+		display: block;
+		max-width: 400px;
+		margin: 0.5 auto 1em 0.5em;
+		padding: 1em 0;
+
+		img {
+			margin: 0 auto;
+		}
+
+		figcaption {
+			margin-top: 0.6em 0;
+			text-align: center;
+
+			
+			.fig-num {
+				font-family: $sans-display-font-family;
+				color: $main-color;
+
+				&:before {
+					content: "";
+					height: 2px;
+					width: 30px;
+					margin-right: 4px;
+					margin-bottom: 4px;
+					background-color: $main-color;
+					display: inline-block;
+				}
+			}
+
+		}
+	}
+
+	#aleph {
+		float: right;
+		padding-top: 5px;
+	}
+}
