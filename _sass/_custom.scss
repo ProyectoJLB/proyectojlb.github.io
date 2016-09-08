@@ -15,17 +15,36 @@
 	}
 }
 
+.social {
+	float: right;
+	height: 56px;
+	display: table;
+
+	div {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
 .caratula {
-	height: calc(100vh - 100px);
+	height: 65vh;
+	width: 100%;
+	min-height: 370px;
+	display: table;
 	background-color: $main-color;
 	color: white;
 	text-align: center;
 
+	.caratula-wrapper {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
 	h1 {
+		margin-top: 0.3em;
 		font-size: 4em;
 		font-family: $serif-display-font-family;
 		margin-bottom: 0;
-		padding-top: 20vh;
 	}
 
 	h2 {
@@ -73,8 +92,8 @@
 	figure {
 		display: block;
 		max-width: 400px;
-		margin: 1em auto 0em auto;
-		padding: 1em;
+		margin: 0 auto;
+		padding: 1em 1em 0.5em 1em;
 
 		img {
 			margin: 0 auto;
@@ -103,9 +122,40 @@
 		}
 	}
 
-	#aleph {
+	#montevideo {
+		float: right;
+	}
+
+	#jean-baptiste {
 		float: right;
 		padding-top: 5px;
+	}
+
+	#candioti {
+		max-width: 10000em;
+		padding-left: 0;
+		padding-right: 0;
+
+		figcaption {
+			margin: 0.8em auto 0 auto;
+			max-width: 600px;
+		}
+	}
+
+	#tacuarembo {
+		float: left;
+	}
+
+	#estancia {
+		float: right;
+	}
+
+	#armas {
+		float: left;
+	}
+
+	#rgds {
+		float: right;
 	}
 }
 
